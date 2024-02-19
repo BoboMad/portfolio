@@ -1,0 +1,35 @@
+
+.banner{
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('../../assets/banner-purple-stars.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.connectBtn{
+    
+    background-color: transparent;
+    color: white;
+    border: 0;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.connectBtn::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.connectBtn:hover::after{
+    width: 100%;
+}
