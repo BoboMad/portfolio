@@ -1,40 +1,71 @@
 
-
-
 .cssIcon{
     color: #004CE8;
-    font-size: 40px;
+    font-size: 100px;
+    transform: rotate(30deg);
 }
 
 .htmlIcon{
     color: #E44D26;
-    font-size: 40px;
+    font-size: 100px;
+    transform: rotate(-30deg);
 }
 
 .csharpIcon{
     color: #A47DDD;
-    font-size: 40px;
+    font-size: 100px;
 }
 
 .jsIcon{
-    font-size: 40px;
+    font-size: 100px;
     color: #F7E018;
 }
 
 .reactIcon{
     color: #66DBFB;
-    font-size: 40px;
+    font-size: 100px;
 }
 
 .sqlIcon{
-    font-size: 40px;
+    font-size: 100px;
 }
 
 .entityframeworkIcon{
-    font-size: 40px;
+    font-size: 100px;
 
 }
 
 .dotNetIcon{
     font-size: 28px;
+}
+
+.skillSection{
+    margin-top: 0;
+    background-image: url(../../assets/background-left.png);
+    width: 100svh;
+    height: 100svh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.skills{
+    background-color: #121212;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -64px;
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.skillContainer p{
+    margin: 50px;
+}
+
+.skillContainer h5{
+    margin: 10px;
 }

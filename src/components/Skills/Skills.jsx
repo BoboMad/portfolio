@@ -31,48 +31,62 @@ const Skills = () => {
       };
 
   return (
-    <section className='skills' id='skills'>
-        <Container>
-            <Row>
-                <Col>
-                    <div className="skillContainer">
-                        <h2>
-                            Skills
-                        </h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit natus, ipsa consequatur, aperiam vitae eos mollitia minima soluta, officia corrupti vero aspernatur quia adipisci dolore distinctio consequuntur? Magnam, quod delectus!
-                        </p>
-                        <Carousel responsive={responsive} infinite={true} className='skill-slider'>
-                            <div className='item'>
-                                <IoLogoJavascript className={styles.jsIcon}/>
-                                <h5>Javascript</h5>
-                            </div>
-                            <div className='item'>
-                                <FaHtml5 className={styles.htmlIcon} /><FaCss3Alt className={styles.cssIcon}/>
-                                <h5>html/css</h5>
-                            </div>
-                            <div className='item'>
-                                <SiCsharp className={styles.csharpIcon}/>
-                                <h5>c#</h5>
-                            </div>
-                            <div className='item'>
-                                <FaReact className={styles.reactIcon}/>
-                                <h5>React</h5>
-                            </div>
-                            <div className='item'>
-                                <FaDatabase className={styles.sqlIcon}/>
-                                <h5>SQL</h5>
-                            </div>
-                            <div className='item'>
-                                <DiDotnet className={styles.entityframeworkIcon}/>
-                                <SiDotnet className={styles.dotNetIcon}/>
-                                <h5>Entity Framework</h5>
-                            </div>
-
-                        </Carousel>
-                    </div>
-                </Col>
-            </Row>
+    <section className={styles.skillSection} id='skills'>
+        <Container className={styles.skills}>
+            <h2>
+                 Skills
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit natus, ipsa consequatur, aperiam vitae eos mollitia minima soluta, officia corrupti vero aspernatur quia adipisci dolore distinctio consequuntur? Magnam, quod delectus!
+            </p>
+            <Carousel  
+            responsive={responsive}
+            infinite={true}
+            customTransition='all 1000ms linear'
+            transitionDuration={1000}
+            arrows={false}
+            pauseOnHover
+            autoPlay
+            autoPlaySpeed={10000}
+            >
+                <div>
+                <IoLogoJavascript className={styles.jsIcon}/>
+                <h5>Javascript</h5>
+                </div>    
+                
+                <div>
+                <FaHtml5 className={styles.htmlIcon} /><FaCss3Alt className={styles.cssIcon}/>
+                <h5>html/css</h5>   
+                </div>
+                
+                <div>
+                <SiCsharp className={styles.csharpIcon}/>
+                <h5>C#</h5>
+                </div>
+                
+                <div>
+                <FaReact className={styles.reactIcon}/>
+                <h5>React</h5>
+                </div>        
+                
+                <div>
+                <DiDotnet className={styles.entityframeworkIcon}/>
+                <SiDotnet className={styles.dotNetIcon}/>
+                <h5>ASP.NET</h5>
+                </div>
+                
+                <div>
+                <FaDatabase className={styles.sqlIcon}/>
+                <h5>SQL</h5>
+                </div>
+                
+                <div>
+                <DiDotnet className={styles.entityframeworkIcon}/>
+                <SiDotnet className={styles.dotNetIcon}/>
+                <h5>Entity Framework</h5>
+                </div>
+                
+            </Carousel>
         </Container>
     </section>
   )
